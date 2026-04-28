@@ -9,8 +9,8 @@ profile:
   image: my_img.png
   image_circular: True # crops the image to make it circular
   more_info: >
-    <p>555 Cusack Lab</p>
-    <p>123 Trinity Institue for Neuroscience, Trinity College Dublin</p>
+    <p>Cusack Lab</p>
+    <p>Trinity Institue for Neuroscience, Trinity College Dublin</p>
     <p>Dublin, Ireland</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
