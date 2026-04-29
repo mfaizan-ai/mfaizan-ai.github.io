@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I am delighted to share that I have completed my Master’s degree in Robotics and Intelligent Machine Engineering at the National University of Sciences and Technology, Islamabad, Pakistan.

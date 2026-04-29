@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: A long announcement with details
 date: 2015-11-07 16:11:00-0400
@@ -30,4 +30,12 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 > We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
 > —Anais Nin
 
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->
+---
+layout: post
+date: 2025-04-24 
+inline: true
+related_posts: false
+---
+
+I am delighted to share that our paper, “RAG-Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions,” received the Best Paper Award in the Software Engineering Track at the 5th International Conference on Communication Technologies (ComTech), held at the Military College of Signals, Rawalpindi.
