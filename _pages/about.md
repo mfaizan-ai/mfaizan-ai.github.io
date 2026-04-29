@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD student at <a href='https://www.tcd.ie'> Trinity College Dublin</a>.
 
 profile:
   align: right
