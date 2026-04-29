@@ -7,7 +7,7 @@ subtitle: PhD student at <a href='https://www.tcd.ie'> Trinity College Dublin</a
 profile:
   align: right
   image: my_img.png
-  image_circular: True # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Cusack Lab</p>
     <p>Trinity Institue for Neuroscience, Trinity College Dublin</p>
