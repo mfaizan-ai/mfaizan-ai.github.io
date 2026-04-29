@@ -433,16 +433,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-am-delighted-to-share-that-i-have-completed-my-master-s-degree-in-robotics-and-intelligent-machine-engineering-at-the-national-university-of-sciences-and-technology-islamabad-pakistan",
+          title: 'I am delighted to share that I have completed my Master’s degree in...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-am-delighted-to-share-that-i-have-joined-the-cusack-lab-as-a-phd-student-where-i-will-be-working-on-research-at-the-intersection-of-neuroimaging-machine-learning-and-motion-correction",
+          title: 'I am delighted to share that I have joined the Cusack Lab as...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
