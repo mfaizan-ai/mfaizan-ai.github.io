@@ -2,11 +2,11 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: false
+nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/Faizans_CV.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: My updated CV is attached as pdf to this page. 
+description: Summary of relevant experience and research 
 toc:
   sidebar: left
 ---
