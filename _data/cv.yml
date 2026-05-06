@@ -98,20 +98,30 @@ cv:
           - "Men of the year 2014 by Time magazine"
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: Best Paper Award
+        awarder: ComTech 2025
+        date: 2025-04-01
+        summary: Awarded for the paper "RAG Powered LLMs for QA — Evolution, Challenges, Applications, and Future Directions."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: Prime Minister High Achievers Award
+        awarder: NUST
+        date: 2023-08-01
+        summary: Awarded in recognition of outstanding academic performance during MS studies at NUST.
+
+      - title: NTF Merit Scholarship
+        awarder: NUST
+        date: 2023-01-01
+        summary: National Technology Fund merit scholarship awarded for academic excellence at NUST.
+
+      - title: USAID Merit Scholarship
+        awarder: UET Peshawar
+        date: 2017-09-01
+        summary: Merit-based scholarship awarded by USAID for undergraduate studies at UET Peshawar (2017–2020).
+
+      - title: KPK Government Scholarship
+        awarder: GCT Attock
+        date: 2013-09-01
+        summary: Provincial government scholarship awarded for academic excellence.
 
     Publications:
       - title: Zur Elektrodynamik bewegter Körper
