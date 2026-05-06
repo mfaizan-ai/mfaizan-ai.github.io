@@ -19,28 +19,43 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: Trinity College Dublin (TCD)
+        location: Dublin, Ireland
+        url: https://www.tcd.ie/
+        area: Psychology
+        studyType: Doctor of Philosophy (PhD)
+        start_date: 2025-09-01
+        end_date: present
         score: ""
-        courses: "Theory of Relativity"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: Joint Reconstruction and Motion Correction of Infant Functional MRI Using Physics-Informed Deep Neural Networks"
+          - "Advisor: <a href='https://www.tcd.ie/research/profiles/?profile=cusackrh'>Prof. Rhodri Cusack</a>"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: National University of Sciences and Technology (NUST)
+        location: Islamabad, Pakistan
+        url: https://nust.edu.pk/
+        area: Robotics and Intelligent Machine Engineering
+        studyType: Master of Science (MS)
+        start_date: 2022-09-01
+        end_date: 2025-02-01
+        score: "CGPA: 3.85/4.00"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: Hybrid 3D Neural Network Architecture for Multi-Modal MRI Brain Tumor Segmentation"
+          - "Advisor: <a href='https://research.monash.edu/en/persons/sara-sial/'>Dr. Sara Baber Sial</a>"
+          - "Recipient of the NTF Merit Scholarship and the Prime Minister High Achievers Award (2023)"
+
+      - institution: University of Engineering and Technology (UET)
+        location: Peshawar, Pakistan
+        url: https://www.uetpeshawar.edu.pk/
+        area: Mechatronics Engineering
+        studyType: Bachelor of Science (BS)
+        start_date: 2016-09-01
+        end_date: 2020-09-01
+        score: "CGPA: 3.35/4.00"
+        highlights:
+          - "Thesis: Flow and Pressure Control in Variable Rate Application Sprayer"
+          - "Advisor: <a href='https://www.uetpeshawar.edu.pk/aral/dr-tufail-khan/index.html'>Dr. Muhammad Tufail Khan</a>"
+          - "Recipient of the USAID Merit Scholarship (2017–2020)"
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
