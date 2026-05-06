@@ -21,7 +21,9 @@
 
   ul {
     justify-content: center;
-    display: flow-root;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
     p,
     li {
