@@ -115,29 +115,50 @@ cv:
         summary: Provincial government scholarship awarded for academic excellence.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Hafiz Muhammad Ali Zeeshan
+          - "**Muhammad Faizan**"
+          - Usman Zia
+          - Abdullah Gohar
+        publisher: "2025 International Conference on Communication Technologies (ComTech), IEEE"
+        releaseDate: 2025-04-01
+        url: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11034531
+        summary: "A comprehensive review of retrieval-augmented generation (RAG) for LLM-based question answering, covering evolution, building blocks, challenges, and future directions."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "3D SegUX-Net: Multi-Modal MRI Segmentation Using Large Kernels"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - "**Muhammad Faizan**"
+          - Sara Ali
+          - Usman Zia
+          - Muhammad Baber Sial
+        publisher: "Computerized Medical Imaging and Graphics (CMIG) — Under Review"
+        releaseDate: 2025-01-01
+        summary: "Proposes a novel U-shaped encoder-decoder architecture using large kernel depth-wise convolution for volumetric biomedical image segmentation, achieving SOTA on BraTS 2019/2020/2023 and BTCV benchmarks."
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "RailGuard: A Detection-Guided Infrared and Visible Image Fusion Framework for Enhanced Rail Safety"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - "**Muhammad Faizan**"
+          - Muhammad Hammad
+          - Abid Rafique
+          - Hammad M. Cheema
+        publisher: "IEEE Transactions on Vehicular Technology — Under Review"
+        releaseDate: 2025-01-01
+        summary: "Introduces a joint image fusion and semantic segmentation framework optimised for edge devices, achieving real-time inference on Jetson Orin Nano for railway hazard detection."
+
+      - title: "Vehicle Recognition using Multi-Layer Perceptron and SMOTE Technique"
+        authors:
+          - Afaq Ahmad
+          - Arshid Ali
+          - Fadia Ali Khan
+          - Zeeshan Habib
+          - Zia Ud Din
+          - Muhammad Zulfiqar Ali
+          - "**Muhammad Faizan**"
+        publisher: "2022 2nd International Conference of Smart Systems and Emerging Technologies (SMARTTECH), IEEE"
+        releaseDate: 2022-01-01
+        url: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9842422
+        summary: "Proposes an MLP-based vehicle recognition system using SMOTE for class imbalance, achieving 86.02% classification accuracy on the UCI vehicle dataset."
 
     Skills:
       - name: Physics
