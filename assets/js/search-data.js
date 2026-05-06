@@ -178,6 +178,20 @@ ninja.data = [{
           window.open("mailto:%6D%66%61%69%7A%61%6E@%74%63%64.%69%65", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'Linkedin',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/mfaizan-ai/", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'Github',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/mfaizan-ai", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
