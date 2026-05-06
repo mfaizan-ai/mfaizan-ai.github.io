@@ -219,13 +219,27 @@ cv:
         icon: fa-solid fa-graduation-cap
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: "3D SegUX-Net: Hybrid Neural Network for Brain Tumor Segmentation"
+        start_date: 2025-02-01
+        end_date: 2025-02-01
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - "Designed a novel U-shaped encoder-decoder integrating large-kernel depth-wise convolution and point-wise convolution to expand receptive fields for volumetric MRI segmentation without sacrificing computational efficiency."
+          - "Outperformed 10 state-of-the-art models on BraTS 2023: +2.18% Mean Dice over SwinUNETR and +0.29% over SegResNet, establishing a new benchmark for hybrid CNN-transformer medical segmentation."
+
+      - name: "Foundcog Infants Multi-band fMRI Reconstruction"
+        start_date: 2026-01-01
+        end_date: 2026-01-01
+        highlights:
+          - "Developed a high-performance Split-Slice GRAPPA reconstruction pipeline for multiband fMRI k-space data, enabling efficient reconstruction of large-scale neuroimaging datasets comprising 139 infant subjects, over 400,000 volumes, and 3.6 million raw multiband slices."
+          - "Established an fMRI reconstruction framework that provides clean, artifact-aware inputs for downstream motion modeling in k-space, building upon the reconstruction pipeline and forming the foundation for ongoing PhD work on joint motion correction and reconstruction to improve robustness in motion-corrupted infant and adult datasets."
+
+      - name: "Selected Additional Projects"
+        highlights:
+          - "Chest Radiograph Recognition and Grad-CAM Localisation."
+          - "Diffusion-based transformer model to denoise images with text prompt guidance."
+          - "RAG-powered LLM chatbot for SINES NUST, integrating document retrieval with GPT-based generation."
+          - "Sentence grammar classification with end-to-end MLOps pipeline (CI/CD, model registry, monitoring)."
+          - "Multi-layer Perceptron built from scratch using NumPy, including backpropagation and regularisation."
 
     References:
       - name: Professor John Doe
