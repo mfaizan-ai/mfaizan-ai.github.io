@@ -119,6 +119,15 @@ html[data-theme="dark"] {
   .only-dark {
     display: block;
   }
+
+  .social .contact-icons a img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(0) invert(0.7) sepia(1) saturate(3) hue-rotate(155deg);
+    }
+  }
 }
 
 html[data-theme-setting="dark"] {
