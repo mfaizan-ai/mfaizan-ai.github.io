@@ -178,7 +178,7 @@ cv:
         keywords: "NumPy, Pandas, OpenCV, ITK, Matplotlib, Seaborn, SciPy, SpaCy"
 
     Languages:
-      - name: German
+      - name: Urdu
         summary: "Native speaker"
 
       - name: English
@@ -190,20 +190,33 @@ cv:
         keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
 
     Certificates:
+      - name: Deep Learning Specialization
+        issuer: Coursera — DeepLearning.AI
+        icon: fa-solid fa-graduation-cap
+
       - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+        issuer: Coursera — Stanford University
+        icon: fa-solid fa-graduation-cap
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: TensorFlow in Practice Specialization
+        issuer: Coursera — DeepLearning.AI
+        icon: fa-solid fa-graduation-cap
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: Mathematics for Machine Learning Specialization
+        issuer: Coursera — Imperial College London
+        icon: fa-solid fa-graduation-cap
+
+      - name: Generative AI with Large Language Models
+        issuer: Coursera — DeepLearning.AI
+        icon: fa-solid fa-graduation-cap
+
+      - name: Introduction to ML in Production
+        issuer: Coursera — DeepLearning.AI
+        icon: fa-solid fa-graduation-cap
+
+      - name: AI for Medical Diagnosis
+        issuer: Coursera — DeepLearning.AI
+        icon: fa-solid fa-graduation-cap
 
     Projects:
       - name: Quantum Computing
