@@ -161,10 +161,21 @@ cv:
         summary: "Proposes an MLP-based vehicle recognition system using SMOTE for class imbalance, achieving 86.02% classification accuracy on the UCI vehicle dataset."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, MATLAB, R"
+
+      - name: ML Frameworks
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, TensorFlow, Scikit-learn, Keras, MONAI, NLTK"
+
+      - name: Developer Tools
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Git, Docker, Google Cloud Platform, VS Code, PyCharm, Jupyter Lab"
+
+      - name: Libraries
+        icon: fa-solid fa-layer-group
+        keywords: "NumPy, Pandas, OpenCV, ITK, Matplotlib, Seaborn, SciPy, SpaCy"
 
     Languages:
       - name: German
