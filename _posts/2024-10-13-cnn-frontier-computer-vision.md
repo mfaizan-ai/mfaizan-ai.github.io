@@ -3,7 +3,7 @@ layout: post
 title: "The Next Frontier in Computer Vision: Are CNNs Ready to Take the Lead?"
 date: 2024-10-13
 description: How can we empower CNNs to learn like transformers, overcome their inherent limitations, and leverage large-scale data and models with billions of parameters?
-tags: [computer-vision, CNN, deep-learning, transformers, InternImage]
+tags: [deep-learning, computer-vision, large-language-models, diffusion-models, medical-imaging, neuroscience]
 categories: research
 thumbnail: assets/img/blog/cnn-frontier/hero.png
 ---
