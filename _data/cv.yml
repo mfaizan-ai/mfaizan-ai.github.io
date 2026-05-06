@@ -185,9 +185,9 @@ cv:
         summary: "Fluent"
 
     Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Research Interests
+        icon: fa-solid fa-microscope
+        keywords: "AI, Computer Vision, Medical Imaging, Large Language Models, Agentic AI, Reinforcement Learning, Physics-Informed Deep Learning, Generative Models"
 
     Certificates:
       - name: Deep Learning Specialization
