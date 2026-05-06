@@ -185,7 +185,7 @@ cv:
         summary: "Fluent"
 
     Interests:
-      - name: Research Interests
+      - name: Interests
         icon: fa-solid fa-microscope
         keywords: "AI, Computer Vision, Medical Imaging, Large Language Models, Agentic AI, Reinforcement Learning, Physics-Informed Deep Learning, Generative Models"
 
@@ -242,10 +242,6 @@ cv:
           - "Multi-layer Perceptron built from scratch using NumPy, including backpropagation and regularisation."
 
     References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Professor Rhodri Cusack
+        icon: fa-solid fa-user-tie
+        reference: "Thomas Mitchell Professor of Cognitive Neuroscience, Psychology. Director of TCIN, Trinity Institute of Neurosciences (TCIN). Email: cusackrh@tcd.ie"
