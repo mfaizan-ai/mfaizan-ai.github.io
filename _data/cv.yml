@@ -58,42 +58,33 @@ cv:
           - "Recipient of the USAID Merit Scholarship (2017–2020)"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Radar Research Lab, NUST
+        position: Research Associate
+        location: Islamabad, Pakistan
+        start_date: 2023-09-01
+        end_date: 2025-04-01
         highlights:
-          - Relativity
-          - Description 2.
+          - "Led development of RailGuard, a real-time AI safety system that fuses infrared and visible streams for track obstacle detection; introduced a novel detection-guided fusion approach that directly optimizes images for downstream detection."
+          - "Built an open-source RRL 10k paired annotated IR–RGB dataset and achieved SOTA accuracy–efficiency trade-off (AP@0.5: 0.751) with real-time edge inference (2.5 ms Tesla T4 GPU / 3.0 ms Jetson Orin Nano, 0.04M params), reducing false negatives in adverse conditions and supporting driver-assist deployment (manuscript under review)."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Web Solutions Plus
+        position: Machine Learning Engineer
+        location: Islamabad, Pakistan
+        start_date: 2022-04-01
+        end_date: 2023-06-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Trained YOLOv5 on 1M+ annotated images across five classes (person, head, car, trolley, falling person), achieving a 7.5% improvement in F1-score over the baseline; deployed the model on NVIDIA Jetson Nano for edge inference."
+          - "Redesigned the YOLOv5 backbone to reduce redundant computation, delivering a 27% throughput improvement on NVIDIA RTX 3090 and a 3 FPS gain on Axis communication cameras."
+          - "Integrated a centroid-based re-identification module into StrongSORT, reducing identity switches in occluded multi-person tracking scenarios and improving downstream surveillance accuracy."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+      - company: National Center of Robotics and Automation (NCRA) Lab
+        position: Machine Learning Intern
+        location: Peshawar, Pakistan
+        start_date: 2021-01-01
+        end_date: 2021-05-31
+        highlights:
+          - "Trained an SSD model on a maize crop dataset, achieving an mAP@0.5 of 0.81, and deployed it on a precision agriculture sprayer for targeted pesticide application."
+          - "Developed a custom CNN architecture to classify maize crop and weed with 97% accuracy."
 
     Volunteer:
       - company: People's Climate March
