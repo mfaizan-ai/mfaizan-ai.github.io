@@ -8,11 +8,11 @@ categories: research
 thumbnail: assets/img/blog/cnn-frontier/hero.png
 ---
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/hero.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/hero.png" class="img-fluid rounded z-depth-1" caption="Figure 1: The frontier of large-scale computer vision — can CNNs rise to compete with Vision Transformers? (Image by Raphael Nogueira on Unsplash)" %}
 
-With the extraordinary success of Transformer architectures in large language models for NLP, Vision Transformers (ViTs) have rapidly gained prominence in computer vision, becoming a standard for research and development in large-scale vision models. Some researchers have made significant contributions in scaling ViTs to over a billion parameters, leveraging massive datasets to achieve substantial performance gains. This has led to the belief that CNN-based architectures are inferior to ViTs when dealing with vast amounts of data and the capacity for large-scale models.
+With the extraordinary success of Transformer architectures in large language models for NLP, Vision Transformers (ViTs) have rapidly gained prominence in computer vision, becoming a standard for research and development in large-scale vision models. Some researchers have made significant contributions in scaling ViTs to over a billion parameters, leveraging massive datasets to achieve substantial performance gains. This has led to the widespread belief that CNN-based architectures are inferior to ViTs when dealing with vast amounts of data and large-scale models (Figure 2).
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/vit-scaling.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/vit-scaling.png" class="img-fluid rounded z-depth-1" caption="Figure 2: Scaling behaviour of Vision Transformers (ViTs) with increasing model parameters and data, illustrating the performance gains that fuelled the assumption of ViT superiority." %}
 
 However, a recent study titled **"InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions"** published at CVPR 2023, challenges this belief. The study argues that CNNs can achieve comparable, or even superior, performance when enhanced with architectural designs inspired by transformers, scaled up in terms of parameters, and trained on massive datasets.
 
@@ -22,17 +22,17 @@ The goal of this study is to extend Convolutional Neural Networks (CNNs) to larg
 - **Adaptive adjustments:** The sampling offsets and modulation scalars are adjusted based on the input data, enabling adaptive spatial aggregation similar to Vision Transformers (ViTs), therefore reducing the inherent inductive bias typically associated with CNNs.
 - **Efficiency of a 3×3 convolution kernel:** This choice minimizes optimization costs and reduces the computational overhead associated with large, dense kernels.
 
-Before diving deeper into sparse convolution and InternImage architecture, let's understand some important concepts.
+Before diving deeper into sparse convolution and the InternImage architecture, let's understand some important concepts.
 
 ---
 
 ## Convolution
 
-The convolution operation involves multiplying (convolving) kernel values with input image pixel values and summing up the result. A kernel strides over an image to calculate the output feature map. A picture is worth a thousand words — let's understand this by the following visualization.
+The convolution operation involves multiplying (convolving) kernel values with input image pixel values and summing up the result. A kernel strides over an image to calculate the output feature map. As illustrated in Figure 3, the kernel slides across the spatial dimensions of the input to produce each value in the output feature map. Figure 4 further animates this process to build an intuitive understanding.
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/convolution-visualization.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/convolution-visualization.jpeg" class="img-fluid rounded z-depth-1" caption="Figure 3: Static illustration of the standard convolution operation. A fixed kernel slides over the input image, computing element-wise multiplications and summing the results to produce each output feature map value." %}
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/convolution-animation.gif" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/convolution-animation.gif" class="img-fluid rounded z-depth-1" caption="Figure 4: Animated visualisation of the convolution operation showing the kernel striding across the input, producing the output feature map step by step." %}
 
 ---
 
@@ -44,18 +44,18 @@ The receptive field of Convolutional Neural Networks (CNNs) is small when stacke
 
 ## Deformable Convolution
 
-Deformable convolution is the same as standard convolution except it dynamically adjusts its sampling location by learnable offsets to better capture the spatial relationships of input data. In the Deformable Convolution v2 (DCNv2) paper, it is expressed as:
+Deformable convolution is the same as standard convolution except it dynamically adjusts its sampling location by learnable offsets to better capture the spatial relationships of input data. As shown in Figure 5, unlike the fixed grid sampling in standard convolution, deformable convolution warps the sampling grid based on the input, enabling it to focus on relevant spatial regions. In the Deformable Convolution v2 (DCNv2) paper, it is expressed as:
 
 $$y(p_0) = \sum_{k=1}^{K} w_k \, m_k \, x(p_0 + p_k + \Delta p_k)$$
 
 This equation gives a couple of nice properties that were missing in standard convolution:
 
-- **Learnable offset:** For learning long-range dependencies, the sample offset is learnable and can interact with short- or long-range features.
-- **Adaptive spatial aggregation:** Both the modulation scalar and sampling offset are learnable and conditioned on the input $$X$$.
+- **Learnable offset:** For learning long-range dependencies, the sample offset $$\Delta p_k$$ is learnable and can interact with short- or long-range features.
+- **Adaptive spatial aggregation:** Both the modulation scalar $$m_k$$ and sampling offset $$\Delta p_k$$ are learnable and conditioned on the input $$X$$.
 
 These unique features make DCN share similar favourable characteristics as multi-head self-attention (MHSA) in transformer models.
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/deformable-convolution.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/deformable-convolution.jpeg" class="img-fluid rounded z-depth-1" caption="Figure 5: Comparison of standard convolution (fixed grid, left) and deformable convolution (adaptive grid, right). The learnable offsets allow the sampling locations to warp and focus on task-relevant spatial regions, enabling long-range dependency modelling." %}
 
 Inspired by this, InternImage advances DCNv2 to create the **DCNv3** operator that powers CNNs to overcome the inherent limitations of standard convolution and share similar properties with MHSA.
 
@@ -69,7 +69,7 @@ DCNv3 is built on DCNv2 with the following additional features:
 In DCNv2, different neurons have independent linear projections, making computation and memory linear with respect to the number of sampling points — limiting efficiency when scaling the model. To address this, the original convolution weights are divided into depth-wise and point-wise parts. The depth-wise component is governed by the original location-aware modulation scalar, while the point-wise component utilises shared projection weights across all sampling points.
 
 **2. Multi-group mechanism**
-The spatial aggregation process is divided into $$G$$ groups, where each group has its own modulation scalar and sampling offset, giving different spatial aggregation patterns on the same convolution layer. This helps learn strong features for visual recognition tasks.
+The spatial aggregation process is divided into $$G$$ groups, where each group has its own modulation scalar and sampling offset, giving different spatial aggregation patterns on the same convolution layer. This is analogous to multi-head attention in transformers, where different heads attend to different aspects of the input.
 
 **3. Normalising modulation scalars along sampling points**
 In DCNv2, modulation scalars are element-wise normalised using a sigmoid activation function, where each modulation scalar varies between 0 and 1. The sum of normalised modulation scalars varies from 0 to K, making training unstable at scale. To remedy this, the sigmoid function is replaced with a softmax function, constraining the sum of all modulation scalars to 1, making the training process more stable.
@@ -82,27 +82,27 @@ $$y(p_0) = \sum_{g=1}^{G} \sum_{k=1}^{K} w_g \, m_{gk} \, x_g(p_0 + p_k + \Delta
 
 ## Basic Block of InternImage
 
-The design of the basic block of InternImage is closer to ViTs, incorporating advanced components such as Layer Normalisation (LN), Multi-Layer Perceptron (MLP), and GELU activation.
+The design of the basic block of InternImage is closer to ViTs, incorporating advanced components such as Layer Normalisation (LN), Multi-Layer Perceptron (MLP), and GELU activation. As shown in Figure 6, the key difference from a standard transformer block is that the MHSA module is replaced with the DCNv3 operator, which predicts sampling offsets and modulation scalars based on the given input $$X$$.
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/internimage-basic-block.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/internimage-basic-block.jpeg" class="img-fluid rounded z-depth-1" caption="Figure 6: InternImage architecture with an illustration of the basic block using the DCNv3 operator. MHSA is replaced by DCNv3, which dynamically predicts sampling offsets and modulation scalars from the input. Source: [1]" %}
 
-As can be observed from the figure above, the MHSA is replaced with the DCNv3 operator which predicts sampling offsets and modulation scalars based on the given input $$X$$. InternImage utilises such basic blocks to create a robust feature extraction backbone for downstream tasks such as object detection, classification, and segmentation.
+InternImage utilises such basic blocks to create a robust feature extraction backbone for downstream tasks such as object detection, classification, and segmentation.
 
 ---
 
 ## Results
 
-InternImage ranks 2nd in semantic segmentation on ADE20K and in object detection on the COCO validation leaderboard on *Papers with Code*, beating their ViT counterparts on classification, object detection, and semantic segmentation tasks.
+InternImage ranks 2nd in semantic segmentation on ADE20K and in object detection on the COCO validation leaderboard on *Papers with Code*, beating their ViT counterparts on classification, object detection, and semantic segmentation tasks. As shown in Figures 7 and 8, InternImage consistently achieves competitive results across multiple benchmarks, demonstrating that well-designed CNN architectures can rival or surpass transformer-based models at scale.
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/results-1.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/results-1.jpeg" class="img-fluid rounded z-depth-1" caption="Figure 7: InternImage performance comparison on image classification and object detection benchmarks against ViT-based and CNN-based baselines. InternImage achieves competitive results with significantly fewer inductive biases. Source: [1]" %}
 
-{% include figure.liquid path="assets/img/blog/cnn-frontier/results-2.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/blog/cnn-frontier/results-2.jpeg" class="img-fluid rounded z-depth-1" caption="Figure 8: InternImage performance on semantic segmentation benchmarks (ADE20K). The model achieves state-of-the-art results, rivalling and in some cases surpassing ViT-based counterparts. Source: [1]" %}
 
 ---
 
 ## Conclusion
 
-InternImage marks the beginning of CNN-based foundation models for computer vision tasks that share similar properties with transformer design. When trained with a massive dataset, the model can obtain comparable or even better results on visual recognition tasks than ViT-based architectures — pointing to a future where CNNs could take the lead when carefully designed and trained with massive datasets. Nonetheless, these large CNN-based models are still in an early stage, there is significant room for improvement, and InternImage could be a good starting point for further CNN-based large vision model development.
+InternImage marks the beginning of CNN-based foundation models for computer vision tasks that share similar properties with transformer design. As demonstrated across Figures 6–8, when trained with a massive dataset, the model can obtain comparable or even better results on visual recognition tasks than ViT-based architectures — pointing to a future where CNNs could take the lead when carefully designed and trained with massive datasets. Nonetheless, these large CNN-based models are still in an early stage with significant room for improvement, and InternImage could be a good starting point for further CNN-based large vision model development.
 
 ---
 
