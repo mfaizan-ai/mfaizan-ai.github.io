@@ -64,7 +64,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-deep-learning-based-multimodal-brain-tumor-segmentation-in-mri",
           title: 'Deep Learning-Based Multimodal Brain Tumor Segmentation in MRI',
-          description: "Benchmarking state-of-the-art segmentation models on BraTS 2021/2023 multimodal MRI data, achieving Dice scores up to 0.89 across glioma sub-regions.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_brats_segmentation/";
             },},{id: "teachings-data-science-fundamentals",
