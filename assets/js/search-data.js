@@ -72,6 +72,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_saferail/";
+            },},{id: "projects-gradient-based-recognition-and-localization-of-pathologies-in-chest-radiographs",
+          title: 'Gradient-Based Recognition and Localization of Pathologies in Chest Radiographs',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_xray_classification/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
