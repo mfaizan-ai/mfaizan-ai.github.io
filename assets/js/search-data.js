@@ -92,6 +92,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_railguard/";
+            },},{id: "projects-newsqa-automated-question-answer-generation-from-news-articles",
+          title: 'NewsQA: Automated Question-Answer Generation from News Articles',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_newsqa/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
