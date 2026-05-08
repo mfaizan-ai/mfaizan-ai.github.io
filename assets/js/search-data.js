@@ -77,6 +77,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_xray_classification/";
+            },},{id: "projects-gpt-nano-a-lightweight-gpt-model-for-text-generation",
+          title: 'GPT-Nano: A Lightweight GPT Model for Text Generation',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_gpt_nano/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
