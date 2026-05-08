@@ -87,6 +87,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_text_denoising/";
+            },},{id: "projects-railguard-real-time-multimodal-image-fusion-for-object-detection-on-edge-devices",
+          title: 'RailGuard: Real-Time Multimodal Image Fusion for Object Detection on Edge Devices',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_railguard/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
