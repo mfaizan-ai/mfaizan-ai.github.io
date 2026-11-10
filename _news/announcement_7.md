@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am delighted to have been awarded the **FreezeMotion PhD** position to conduct research on fMRI motion correction in the [Cusack Lab](https://www.cusacklab.org/home.html), Trinity College Dublin.
+I received the **FreezeMotion PhD Scholarship** from Research Ireland to research fMRI motion correction in the [Cusack Lab](https://www.cusacklab.org/home.html), Trinity College Dublin.

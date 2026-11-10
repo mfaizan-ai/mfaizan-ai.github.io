@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I am delighted to share that I have joined the Cusack Lab as a PhD student, where I will be working on research at the intersection of neuroimaging, machine learning, and motion correction. 
+I joined the Cusack Lab at Trinity College Dublin as a PhD student, working at the intersection of neuroimaging, machine learning, and motion correction. 
 

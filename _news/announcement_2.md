@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-I am delighted to share that our paper, “RAG-Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions,” received the Best Paper Award in the Software Engineering Track at the 5th International Conference on Communication Technologies (ComTech), held at the Military College of Signals, Rawalpindi.
+Our paper, “RAG-Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions,” won the Best Paper Award in the Software Engineering Track at the 5th International Conference on Communication Technologies (ComTech), held at the Military College of Signals, Rawalpindi.
 
 
 <!-- ---
