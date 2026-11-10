@@ -14,3 +14,7 @@ github:
   logo: https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg
   title: GitHub
   url: https://github.com/mfaizan-ai
+bluesky:
+  logo: https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bluesky.svg
+  title: Bluesky
+  url: https://bsky.app/profile/mfaizan26.bsky.social

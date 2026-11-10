@@ -132,7 +132,7 @@ cv:
           - Sara Ali
           - Usman Zia
           - Muhammad Baber Sial
-        publisher: "Computerized Medical Imaging and Graphics (CMIG) — Under Review"
+        publisher: "International Journal of Biomedical Imaging — Submitted"
         releaseDate: 2025-01-01
         summary: "Proposes a novel U-shaped encoder-decoder architecture using large kernel depth-wise convolution for volumetric biomedical image segmentation, achieving SOTA on BraTS 2019/2020/2023 and BTCV benchmarks."
 
@@ -142,7 +142,7 @@ cv:
           - Muhammad Hammad
           - Abid Rafique
           - Hammad M. Cheema
-        publisher: "IEEE Transactions on Vehicular Technology — Under Review"
+        publisher: "Information Fusion — Under Review"
         releaseDate: 2025-01-01
         summary: "Introduces a joint image fusion and semantic segmentation framework optimised for edge devices, achieving real-time inference on Jetson Orin Nano for railway hazard detection."
 
