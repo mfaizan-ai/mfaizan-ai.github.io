@@ -89,6 +89,16 @@ cv:
     Volunteer:
 
     Awards:
+      - title: Google PhD Fellowship in Health Research
+        awarder: Google
+        date: 2026-09-08
+        summary: Awarded to support PhD research on physics-informed deep learning for MRI reconstruction and motion correction.
+
+      - title: FreezeMotion PhD Full Scholarship
+        awarder: Trinity College Dublin
+        date: 2024-12-08
+        summary: Fully funded PhD scholarship to conduct research on fMRI motion correction in the Cusack Lab, Trinity College Dublin.
+
       - title: Best Paper Award
         awarder: ComTech 2025
         date: 2025-04-01
@@ -133,7 +143,7 @@ cv:
           - Usman Zia
           - Muhammad Baber Sial
         publisher: "International Journal of Biomedical Imaging — Submitted"
-        releaseDate: 2025-01-01
+        releaseDate: 2026-10-27
         summary: "Proposes a novel U-shaped encoder-decoder architecture using large kernel depth-wise convolution for volumetric biomedical image segmentation, achieving SOTA on BraTS 2019/2020/2023 and BTCV benchmarks."
 
       - title: "RailGuard: A Detection-Guided Infrared and Visible Image Fusion Framework for Enhanced Rail Safety"
@@ -143,7 +153,7 @@ cv:
           - Abid Rafique
           - Hammad M. Cheema
         publisher: "Information Fusion — Under Review"
-        releaseDate: 2025-01-01
+        releaseDate: 2026-11-03
         summary: "Introduces a joint image fusion and semantic segmentation framework optimised for edge devices, achieving real-time inference on Jetson Orin Nano for railway hazard detection."
 
       - title: "Vehicle Recognition using Multi-Layer Perceptron and SMOTE Technique"
