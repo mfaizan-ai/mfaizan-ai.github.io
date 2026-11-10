@@ -1,6 +1,6 @@
 cv:
   name: Muhammad Faizan
-  label: PhD Candidate (Research Assistant)
+  label: PhD Candidate in Psychology & Machine Learning Engineer
   email: mfaizan@tcd.ie
   location: Dublin, Ireland
   image: ""
@@ -44,7 +44,6 @@ cv:
         highlights:
           - "Thesis: Hybrid 3D Neural Network Architecture for Multi-Modal MRI Brain Tumor Segmentation"
           - "Advisor: <a href='https://research.monash.edu/en/persons/sara-sial/'>Dr. Sara Baber Sial</a>"
-          - "Recipient of the NTF Merit Scholarship and the Prime Minister High Achievers Award (2023)"
 
       - institution: University of Engineering and Technology (UET)
         logo: assets/img/logos/uet_peshawar.png
@@ -58,10 +57,10 @@ cv:
         highlights:
           - "Thesis: Flow and Pressure Control in Variable Rate Application Sprayer"
           - "Advisor: <a href='https://www.uetpeshawar.edu.pk/aral/dr-tufail-khan/index.html'>Dr. Muhammad Tufail Khan</a>"
-          - "Recipient of the USAID Merit Scholarship (2017–2020)"
 
     Experience:
       - company: Radar Research Lab, NUST
+        logo: assets/img/logos/nust.png
         position: Research Associate
         location: Islamabad, Pakistan
         start_date: 2023-09-01
@@ -70,7 +69,8 @@ cv:
           - "Led development of RailGuard, a real-time AI safety system that fuses infrared and visible streams for track obstacle detection; introduced a novel detection-guided fusion approach that directly optimizes images for downstream detection."
           - "Built an open-source RRL 10k paired annotated IR–RGB dataset and achieved SOTA accuracy–efficiency trade-off (AP@0.5: 0.751) with real-time edge inference (2.5 ms Tesla T4 GPU / 3.0 ms Jetson Orin Nano, 0.04M params), reducing false negatives in adverse conditions and supporting driver-assist deployment (manuscript under review)."
 
-      - company: Web Solutions Plus
+      - company: Facit Data Systems
+        logo: assets/img/logos/facit.svg
         position: Machine Learning Engineer
         location: Islamabad, Pakistan
         start_date: 2022-04-01
@@ -81,6 +81,7 @@ cv:
           - "Integrated a centroid-based re-identification module into StrongSORT, reducing identity switches in occluded multi-person tracking scenarios and improving downstream surveillance accuracy."
 
       - company: National Center of Robotics and Automation (NCRA) Lab
+        logo: assets/img/logos/ncra.png
         position: Machine Learning Intern
         location: Peshawar, Pakistan
         start_date: 2021-01-01
