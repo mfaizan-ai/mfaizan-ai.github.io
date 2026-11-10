@@ -94,10 +94,10 @@ cv:
         date: 2026-09-08
         summary: Awarded to support PhD research on physics-informed deep learning for MRI reconstruction and motion correction.
 
-      - title: FreezeMotion PhD Full Scholarship
-        awarder: Trinity College Dublin
+      - title: FreezeMotion PhD Scholarship
+        awarder: Research Ireland
         date: 2024-12-08
-        summary: Fully funded PhD scholarship to conduct research on fMRI motion correction in the Cusack Lab, Trinity College Dublin.
+        summary: Fully funded PhD scholarship to conduct research on fMRI motion correction.
 
       - title: Best Paper Award
         awarder: ComTech 2025
@@ -105,22 +105,22 @@ cv:
         summary: Awarded for the paper "RAG Powered LLMs for QA — Evolution, Challenges, Applications, and Future Directions."
 
       - title: Prime Minister High Achievers Award
-        awarder: NUST
+        awarder: Prime Minister of Pakistan
         date: 2023-08-01
         summary: Awarded in recognition of outstanding academic performance during MS studies at NUST.
 
       - title: NTF Merit Scholarship
-        awarder: NUST
+        awarder: National University of Sciences & Technology (NUST)
         date: 2023-01-01
         summary: National Technology Fund merit scholarship awarded for academic excellence at NUST.
 
       - title: USAID Merit Scholarship
-        awarder: UET Peshawar
+        awarder: United States Agency for International Development (USAID)
         date: 2017-09-01
         summary: Merit-based scholarship awarded by USAID for undergraduate studies at UET Peshawar (2017–2020).
 
       - title: KPK Government Scholarship
-        awarder: GCT Attock
+        awarder: Technical Education & Vocational Training Authority (TEVTA), Govt. of KPK
         date: 2013-09-01
         summary: Provincial government scholarship awarded for academic excellence.
 
