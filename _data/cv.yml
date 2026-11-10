@@ -137,6 +137,7 @@ cv:
 
     Publications:
       - title: "RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions"
+        preview: assets/img/publication_preview/rag-llm-qa.png
         authors:
           - Hafiz Muhammad Ali Zeeshan
           - "**Muhammad Faizan**"
@@ -148,6 +149,7 @@ cv:
         summary: "A comprehensive review of retrieval-augmented generation (RAG) for LLM-based question answering, covering evolution, building blocks, challenges, and future directions."
 
       - title: "3D SegUX-Net: Multi-Modal MRI Segmentation Using Large Kernels"
+        preview: assets/img/publication_preview/SegUXNet.png
         authors:
           - "**Muhammad Faizan**"
           - Sara Ali
@@ -158,6 +160,7 @@ cv:
         summary: "Proposes a novel U-shaped encoder-decoder architecture using large kernel depth-wise convolution for volumetric biomedical image segmentation, achieving SOTA on BraTS 2019/2020/2023 and BTCV benchmarks."
 
       - title: "RailGuard: A Detection-Guided Infrared and Visible Image Fusion Framework for Enhanced Rail Safety"
+        preview: assets/img/publication_preview/RailGuard.png
         authors:
           - "**Muhammad Faizan**"
           - Muhammad Hammad
@@ -168,6 +171,7 @@ cv:
         summary: "Introduces a joint image fusion and semantic segmentation framework optimised for edge devices, achieving real-time inference on Jetson Orin Nano for railway hazard detection."
 
       - title: "Vehicle Recognition using Multi-Layer Perceptron and SMOTE Technique"
+        preview: assets/img/publication_preview/method_smote.png
         authors:
           - Afaq Ahmad
           - Arshid Ali
