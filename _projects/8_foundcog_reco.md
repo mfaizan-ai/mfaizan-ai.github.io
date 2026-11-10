@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "FoundCog fMRI Reconstruction: Multiband EPI k-Space Pipeline"
-img: assets/img/reco.png
+title: "An Open-Source Python Pipeline for Simultaneous Multi-Slice fMRI Reconstruction"
+img: assets/img/sms_reconstruction.png
 importance: 8
 category: deep learning
 github: https://github.com/mfaizan-ai/cmrr_epi_reconstruction
