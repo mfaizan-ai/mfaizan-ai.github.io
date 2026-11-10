@@ -53,7 +53,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-am-delighted-to-share-that-i-have-completed-my-master-s-degree-in-robotics-and-intelligent-machine-engineering-at-the-national-university-of-sciences-and-technology-islamabad-pakistan",
+            },},{id: "news-i-am-delighted-to-have-been-awarded-the-freezemotion-phd-position-to-conduct-research-on-fmri-motion-correction-in-the-cusack-lab-trinity-college-dublin",
+          title: 'I am delighted to have been awarded the FreezeMotion PhD position to conduct...',
+          description: "",
+          section: "News",},{id: "news-i-am-delighted-to-share-that-i-have-completed-my-master-s-degree-in-robotics-and-intelligent-machine-engineering-at-the-national-university-of-sciences-and-technology-islamabad-pakistan",
           title: 'I am delighted to share that I have completed my Master’s degree in...',
           description: "",
           section: "News",},{id: "news-i-am-delighted-to-share-that-our-paper-rag-powered-llms-for-qa-evolution-challenges-applications-and-future-directions-received-the-best-paper-award-in-the-software-engineering-track-at-the-5th-international-conference-on-communication-technologies-comtech-held-at-the-military-college-of-signals-rawalpindi",
@@ -61,6 +64,15 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-am-delighted-to-share-that-i-have-joined-the-cusack-lab-as-a-phd-student-where-i-will-be-working-on-research-at-the-intersection-of-neuroimaging-machine-learning-and-motion-correction",
           title: 'I am delighted to share that I have joined the Cusack Lab as...',
+          description: "",
+          section: "News",},{id: "news-i-am-honoured-to-have-been-awarded-the-google-phd-fellowship-in-health-research-which-will-support-my-research-on-physics-informed-deep-learning-for-mri-reconstruction-and-motion-correction",
+          title: 'I am honoured to have been awarded the Google PhD Fellowship in Health...',
+          description: "",
+          section: "News",},{id: "news-our-paper-3d-segux-net-multi-modal-mri-segmentation-using-large-kernels-has-been-submitted-to-the-international-journal-of-biomedical-imaging",
+          title: 'Our paper, “3D SegUX-Net: Multi-Modal MRI Segmentation Using Large Kernels,” has been submitted...',
+          description: "",
+          section: "News",},{id: "news-our-paper-railguard-a-detection-guided-infrared-and-visible-image-fusion-framework-for-enhanced-rail-safety-is-under-review-in-information-fusion",
+          title: 'Our paper, “RailGuard: A Detection-Guided Infrared and Visible Image Fusion Framework for Enhanced...',
           description: "",
           section: "News",},{id: "projects-deep-learning-based-multimodal-brain-tumor-segmentation-in-mri",
           title: 'Deep Learning-Based Multimodal Brain Tumor Segmentation in MRI',
@@ -139,6 +151,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/mfaizan-ai", "_blank");
+        },
+      },{
+        id: 'social-bluesky',
+        title: 'Bluesky',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://bsky.app/profile/mfaizan26.bsky.social", "_blank");
         },
       },{
       id: 'light-theme',
