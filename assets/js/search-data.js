@@ -71,6 +71,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-3d-segux-net-multi-modal-mri-segmentation-using-large-kernels-has-been-submitted-to-the-international-journal-of-biomedical-imaging",
           title: 'Our paper, “3D SegUX-Net: Multi-Modal MRI Segmentation Using Large Kernels,” has been submitted...',
           description: "",
+          section: "News",},{id: "news-three-abstracts-on-motion-artefact-correction-in-fmri-have-been-submitted-to-ismrm-2027",
+          title: 'Three abstracts on motion artefact correction in fMRI have been submitted to ISMRM...',
+          description: "",
           section: "News",},{id: "news-our-paper-railguard-a-detection-guided-infrared-and-visible-image-fusion-framework-for-enhanced-rail-safety-is-under-review-in-information-fusion",
           title: 'Our paper, “RailGuard: A Detection-Guided Infrared and Visible Image Fusion Framework for Enhanced...',
           description: "",
@@ -109,11 +112,16 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_newsqa/";
-            },},{id: "projects-foundcog-fmri-reconstruction-multiband-epi-k-space-pipeline",
-          title: 'FoundCog fMRI Reconstruction: Multiband EPI k-Space Pipeline',
+            },},{id: "projects-an-open-source-python-pipeline-for-simultaneous-multi-slice-fmri-reconstruction",
+          title: 'An Open-Source Python Pipeline for Simultaneous Multi-Slice fMRI Reconstruction',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_foundcog_reco/";
+            },},{id: "projects-cyclegan-based-motion-correction-for-infant-fmri",
+          title: 'CycleGAN-Based Motion Correction for Infant fMRI',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_cyclegan_motion_correction/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
