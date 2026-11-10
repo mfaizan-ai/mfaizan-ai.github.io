@@ -213,31 +213,35 @@ cv:
     Certificates:
       - name: Deep Learning Specialization
         issuer: Coursera — DeepLearning.AI
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/deeplearning_ai.png
 
       - name: Machine Learning
         issuer: Coursera — Stanford University
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/stanford.png
 
       - name: TensorFlow in Practice Specialization
         issuer: Coursera — DeepLearning.AI
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/deeplearning_ai.png
 
       - name: Mathematics for Machine Learning Specialization
         issuer: Coursera — Imperial College London
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/imperial.png
 
       - name: Generative AI with Large Language Models
-        issuer: Coursera — DeepLearning.AI
-        icon: fa-solid fa-graduation-cap
+        issuer: Coursera — Amazon Web Services (AWS)
+        logo: assets/img/logos/aws.png
 
       - name: Introduction to ML in Production
         issuer: Coursera — DeepLearning.AI
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/deeplearning_ai.png
 
       - name: AI for Medical Diagnosis
         issuer: Coursera — DeepLearning.AI
-        icon: fa-solid fa-graduation-cap
+        logo: assets/img/logos/deeplearning_ai.png
+
+      - name: MATLAB Onramp
+        issuer: MathWorks
+        logo: assets/img/logos/matlab.png
 
     Projects:
       - name: "3D SegUX-Net: Hybrid Neural Network for Brain Tumor Segmentation"

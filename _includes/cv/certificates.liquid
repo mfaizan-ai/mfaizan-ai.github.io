@@ -1,27 +1,62 @@
 {% comment %}
-  Unified certificates entry renderer for both formats
+  Unified certificates entry renderer for both formats.
+  Entries with a `logo` show the logo on the left and the title/issuer on the right;
+  entries without one keep the original single-line layout.
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
-      {% if entry.icon %}
-        <i class="{{ entry.icon }}"></i>
-      {% endif %}
-      {% if entry.url %}
-        <strong
-          ><a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a></strong
-        >
+      {% if entry.logo %}
+        <div class="row align-items-center">
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <div
+              class="certificate-logo"
+              style="background: #fff; border: 1px solid var(--global-divider-color); border-radius: 8px; height: 64px; padding: 6px; display: flex; align-items: center; justify-content: center;"
+            >
+              <img
+                src="{{ entry.logo | relative_url }}"
+                alt="{{ entry.issuer | default: entry.name | escape }} logo"
+                loading="lazy"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;"
+              >
+            </div>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            <h6 class="title font-weight-bold ml-1 ml-md-4 mb-1">
+              {% if entry.url %}
+                <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+              {% else %}
+                {{ entry.name }}
+              {% endif %}
+            </h6>
+            {% if entry.issuer %}
+              <h6 class="ml-1 ml-md-4 mb-0" style="font-size: 0.95rem">
+                {{ entry.issuer -}}
+                {%- if entry.date %} ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }}){% endif %}
+              </h6>
+            {% endif %}
+          </div>
+        </div>
       {% else %}
-        <strong>{{ entry.name }}</strong>
-      {% endif %}
+        {% if entry.icon %}
+          <i class="{{ entry.icon }}"></i>
+        {% endif %}
+        {% if entry.url %}
+          <strong
+            ><a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a></strong
+          >
+        {% else %}
+          <strong>{{ entry.name }}</strong>
+        {% endif %}
 
-      {% if entry.issuer %}
-        - <em>{{ entry.issuer }}</em>
-      {% endif %}
+        {% if entry.issuer %}
+          - <em>{{ entry.issuer }}</em>
+        {% endif %}
 
-      {% if entry.date %}
-        ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }})
+        {% if entry.date %}
+          ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }})
+        {% endif %}
       {% endif %}
     </li>
   {% endfor %}
