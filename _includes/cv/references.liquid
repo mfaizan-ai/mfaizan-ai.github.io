@@ -9,7 +9,15 @@
         <i class="{{ entry.icon }}"></i>
       {% endif %}
       <strong>{{ entry.name }}</strong>
-      <p>{{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      <p class="mb-1">{{ entry.reference | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% if entry.email %}
+        <p class="mb-0">
+          <a href="mailto:{{ entry.email }}" title="Email {{ entry.name | escape }}">
+            <i class="fa-solid fa-envelope"></i>
+            {{ entry.email -}}
+          </a>
+        </p>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

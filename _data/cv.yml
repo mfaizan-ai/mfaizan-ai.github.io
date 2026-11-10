@@ -269,4 +269,10 @@ cv:
     References:
       - name: Professor Rhodri Cusack
         icon: fa-solid fa-user-tie
-        reference: "Thomas Mitchell Professor of Cognitive Neuroscience, Psychology. Director of TCIN, Trinity Institute of Neurosciences (TCIN). Email: cusackrh@tcd.ie"
+        reference: "Thomas Mitchell Professor of Cognitive Neuroscience, Psychology. Director of the Trinity College Institute of Neuroscience (TCIN)."
+        email: cusackrh@tcd.ie
+
+      - name: Dr. Sara Baber Sial
+        icon: fa-solid fa-user-tie
+        reference: "Senior Research Fellow at Monash University Suzhou and Senior Lecturer (Adjunct) at Monash University, Australia."
+        email: Sara.Sial@monash.edu
