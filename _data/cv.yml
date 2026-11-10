@@ -20,6 +20,7 @@ cv:
   sections:
     Education:
       - institution: Trinity College Dublin (TCD)
+        logo: assets/img/logos/tcd.png
         location: Dublin, Ireland
         url: https://www.tcd.ie/
         area: Psychology
@@ -32,6 +33,7 @@ cv:
           - "Advisor: <a href='https://www.tcd.ie/research/profiles/?profile=cusackrh'>Prof. Rhodri Cusack</a>"
 
       - institution: National University of Sciences and Technology (NUST)
+        logo: assets/img/logos/nust.png
         location: Islamabad, Pakistan
         url: https://nust.edu.pk/
         area: Robotics and Intelligent Machine Engineering
@@ -45,6 +47,7 @@ cv:
           - "Recipient of the NTF Merit Scholarship and the Prime Minister High Achievers Award (2023)"
 
       - institution: University of Engineering and Technology (UET)
+        logo: assets/img/logos/uet_peshawar.png
         location: Peshawar, Pakistan
         url: https://www.uetpeshawar.edu.pk/
         area: Mechatronics Engineering
@@ -91,36 +94,43 @@ cv:
     Awards:
       - title: Google PhD Fellowship in Health Research
         awarder: Google
+        logo: assets/img/logos/google_research.png
         date: 2026-09-08
         summary: Awarded to support PhD research on physics-informed deep learning for MRI reconstruction and motion correction.
 
       - title: FreezeMotion PhD Scholarship
         awarder: Research Ireland
+        logo: assets/img/logos/research_ireland.svg
         date: 2024-12-08
         summary: Fully funded PhD scholarship to conduct research on fMRI motion correction.
 
       - title: Best Paper Award
         awarder: ComTech 2025
+        logo: assets/img/logos/comtech.png
         date: 2025-04-01
         summary: Awarded for the paper "RAG Powered LLMs for QA — Evolution, Challenges, Applications, and Future Directions."
 
       - title: Prime Minister High Achievers Award
         awarder: Prime Minister of Pakistan
+        logo: assets/img/logos/govt_pakistan.png
         date: 2023-08-01
         summary: Awarded in recognition of outstanding academic performance during MS studies at NUST.
 
       - title: NTF Merit Scholarship
         awarder: National University of Sciences & Technology (NUST)
+        logo: assets/img/logos/nust.png
         date: 2023-01-01
         summary: National Technology Fund merit scholarship awarded for academic excellence at NUST.
 
       - title: USAID Merit Scholarship
         awarder: United States Agency for International Development (USAID)
+        logo: assets/img/logos/usaid.png
         date: 2017-09-01
         summary: Merit-based scholarship awarded by USAID for undergraduate studies at UET Peshawar (2017–2020).
 
       - title: KPK Government Scholarship
         awarder: Technical Education & Vocational Training Authority (TEVTA), Govt. of KPK
+        logo: assets/img/logos/kp_tevta.png
         date: 2013-09-01
         summary: Provincial government scholarship awarded for academic excellence.
 

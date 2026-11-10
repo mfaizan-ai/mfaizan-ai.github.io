@@ -12,17 +12,34 @@
 
         {% if start_date != '' %}
           <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                      {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            {% if entry.logo %}
+              <div
+                class="award-logo"
+                style="background: #fff; border: 1px solid var(--global-divider-color); border-radius: 8px; height: 64px; padding: 6px; display: flex; align-items: center; justify-content: center;"
+              >
+                <img
+                  src="{{ entry.logo | relative_url }}"
+                  alt="{{ entry.awarder | default: entry.title | escape }} logo"
+                  loading="lazy"
+                  style="max-height: 100%; max-width: 100%; object-fit: contain;"
+                >
+              </div>
+              <div class="font-weight-bold mt-1" style="font-size: 0.8rem; color: var(--global-text-color-light);">
+                {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
+              </div>
+            {% else %}
+              <table class="table-cv">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                        {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            {% endif %}
           </div>
           <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
             {% if entry.url %}

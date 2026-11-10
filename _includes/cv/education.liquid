@@ -26,11 +26,26 @@
             {% assign date = null %}
           {% endif %}
 
+          {% if entry.logo %}
+            <div
+              class="education-logo"
+              style="background: #fff; border: 1px solid var(--global-divider-color); border-radius: 8px; height: 64px; padding: 6px; display: flex; align-items: center; justify-content: center;"
+            >
+              <img
+                src="{{ entry.logo | relative_url }}"
+                alt="{{ entry.institution | escape }} logo"
+                loading="lazy"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;"
+              >
+            </div>
+          {% endif %}
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  {% if date %}
+                  {% if date and entry.logo %}
+                    <div class="font-weight-bold mt-1" style="font-size: 0.8rem; color: var(--global-text-color-light);">{{ date }}</div>
+                  {% elsif date %}
                     <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
                   {% endif %}
                 </td>
