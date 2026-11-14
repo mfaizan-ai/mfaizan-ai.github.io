@@ -247,6 +247,10 @@ cv:
         issuer: Coursera — DeepLearning.AI
         logo: assets/img/logos/deeplearning_ai.png
 
+      - name: Grammar and Punctuation
+        issuer: Coursera — University of California, Irvine
+        logo: assets/img/logos/uci.png
+
       - name: MATLAB Onramp
         issuer: MathWorks
         logo: assets/img/logos/matlab.png
