@@ -243,6 +243,10 @@ cv:
         issuer: Coursera — DeepLearning.AI
         logo: assets/img/logos/deeplearning_ai.png
 
+      - name: AI for Everyone
+        issuer: Coursera — DeepLearning.AI
+        logo: assets/img/logos/deeplearning_ai.png
+
       - name: MATLAB Onramp
         issuer: MathWorks
         logo: assets/img/logos/matlab.png
