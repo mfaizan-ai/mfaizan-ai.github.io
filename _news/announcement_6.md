@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am honoured to have been awarded the **{% include google_word.liquid %} PhD Fellowship in Health Research**, which will support my research on physics-informed deep learning for MRI reconstruction and motion correction.
+I am honoured to have been awarded the {% include google_word.liquid %} PhD Fellowship in Health Research, which will support my research on physics-informed deep learning for MRI reconstruction and motion correction.
