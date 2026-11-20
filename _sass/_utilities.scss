@@ -603,3 +603,20 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+
+// "Google" written in Google's brand colours (used in news and CV awards)
+.google-word {
+  font-weight: inherit;
+  .g-blue {
+    color: #4285f4;
+  }
+  .g-red {
+    color: #ea4335;
+  }
+  .g-yellow {
+    color: #fbbc05;
+  }
+  .g-green {
+    color: #34a853;
+  }
+}
