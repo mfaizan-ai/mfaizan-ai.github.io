@@ -6,6 +6,12 @@ div.container-link-button {
   margin-right: 0.5rem;
 }
 
+// Entry titles (roles, awards, papers, certificates, projects) in the theme colour,
+// matching the linked education titles. Coloured words such as "Google" keep their own colours.
+.cv h6.title {
+  color: var(--global-theme-color);
+}
+
 table.table-cv {
   background-color: transparent !important;
 
